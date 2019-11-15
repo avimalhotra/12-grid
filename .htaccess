@@ -1,0 +1,34 @@
+//Rewrite to www
+Options +FollowSymLinks
+RewriteEngine on
+RewriteCond %{HTTP_HOST} ^avi.myartsonline.com/[nc]
+RewriteRule ^(.*)$ http://www.avi.myartsonline.com//$1 [r=301,nc]
+
+//301 Redirect Old File
+Redirect 301 webdesigning.html webdesigningtraining.html
+
+//301 Redirect Entire Directory
+RedirectMatch 301 img(.*) images/$1
+
+//Caching schema
+<FilesMatch "\.(jpg|png|gif|css|js|svg)$">
+Header set Cache-Control "max-age=86400"
+</FilesMatch>
+
+//Custom 404 errors
+ErrorDocument 404 error.html
+
+//Custom 500 errors
+ErrorDocument 500 interror.html
+
+//Change default directory page
+DirectoryIndex home.html
+
+//Prevent viewing of .htaccess file
+<Files .htaccess>
+order allow,deny
+deny from all
+</Files>
+
+//Prevent directory listings
+Options All -Indexes

@@ -1,0 +1,155 @@
+@font-face{
+    font-family:'proximar';
+    src:url(../fonts/proxima-r.woff) format('woff');
+}
+@font-face{
+    font-family:'proximat';
+    src:url(../fonts/proxima-t.woff) format('woff');
+}
+@font-face{
+    font-family:'proximab';
+    src:url(../fonts/proxima-b.woff) format('woff');
+}
+*{ margin: 0; -webkit-box-sizing: border-box; box-sizing: border-box;}
+a{ text-decoration: none}
+img{ vertical-align: bottom}
+ul{ list-style: none; padding: 0}
+body{  font: 14px proximar, sans-serif; }
+.clear{ clear: both}
+h1, h2, h3, h4, b, strong, th{ font-family: proximab, sans-serif;}
+.thin{ font-family: proximat, sans-serif;}
+
+.container{  width: 1200px; margin: auto; padding: 0 15px;}
+.row{ margin: 0 -15px;}
+.row:after{ content: ""; display: block; clear: both}
+.col-1{ width: 8.33%; float: left; padding: 0 15px;}
+.col-2{ width: 16.66%; float: left; padding: 0 15px;}
+.col-3{ width: 25%; float: left; padding: 0 15px;}
+.col-4{ width: 33.33%; float: left; padding: 0 15px;}
+.col-5{ width: 41.66%; float: left; padding: 0 15px;}
+.col-6{ width: 50%; float: left; padding: 0 15px;}
+.col-7{ width: 58.33%; float: left; padding: 0 15px;}
+.col-8{ width: 66.66%; float: left; padding: 0 15px;}
+.col-9{ width: 75%; float: left; padding: 0 15px;}
+.col-10{ width: 83.33%; float: left; padding: 0 15px;}
+.col-11{ width: 91.66%; float: left; padding: 0 15px;}
+.col-12{ width: 100%; float: left; padding: 0 15px;}
+[class^="col"]{ min-height: 1px; }
+
+.wrap-1{ background: #000; color: #fff}
+header h1{ }
+h2{ margin-top: 30px; font-size: 72px; border-bottom: 10px solid; }
+header h1 a{ color: inherit; font-size: 30px; line-height: 80px; display: inline-block}
+nav{ float: left }
+nav ul{ margin-left: -20px; }
+nav ul li{ float: left ; margin: 0 5px;}
+nav ul li a{ color: inherit; padding: 0 15px; display: block; line-height: 80px; font-size: 16px}
+.btn{ width: 90px; height: 35px; border: 2px solid; color: #ca3c3c; background: transparent; font: 16px proximar, sans-serif; border-radius: 10px; margin-top: 22px}
+button.active{ background: #ca3c3c; color: #fff; border-color: #ca3c3c }
+.wrap-1 .btn{ float: right}
+.collapse{ clear: both; padding-bottom: 20px}
+.btn-mob { display: none; float: right !important;}
+.btn-mob span{ display: block; width: 62px; border: 1px solid #ca3c3c; margin: 5px}
+.wrap-2{ background: #666; color: #fff}
+.video{ padding: 100px 0;}
+.video button{ margin-right: 41px; float: left; background: transparent; border: none }
+.video button span.fa{ color: #fff; font-size: 150px }
+
+button:hover,button:active{ cursor: pointer}
+.video p.thin{ margin-top: 32px; font-size: 60px }
+.video p a{ color: #ca3c3c; font-size: 16px }
+
+.wrap-3{ padding: 20px 0; background: #ca3c3c; color: #fff}
+.feature{ margin: 30px 0; }
+.circle{ margin-right: 30px; float: left; width: 100px; height: 100px; border: 2px solid; border-radius: 50%; text-align: center}
+.circle span.fa{ line-height: 96px; font-size: 36px}
+.feature h3{ font-size: 16px; line-height: 30px; margin-bottom: 10px}
+.feature p.thin{ line-height: 22px }
+.wrap-4{ background: #fff; color: #ca3c3c; text-align: center}
+.wrap-4 span.fa{ line-height: 150px; font-size: 36px}
+.wrap-5{ background: #ebebeb; color: #363636; padding-bottom: 20px}
+.wrap-5 .btn{ margin-right: 10px}
+.project{  position: relative; margin-top: 30px}
+.project > a{  display: block}
+.project img{ max-width: 100% }
+.project .hover{ text-align: center;background: #fff; position: absolute; width: 100%; padding: 20px 0; bottom: 0; left: 0; display: none}
+.project .hover h3{ color: #ca3c3c; line-height: 40px}
+.project .hover p{ color: #898989; line-height: 20px}
+.project:hover .hover,.project:active .hover{ display: block}
+.wrap-6{ background: #666; color: #fff; padding: 25px 0}
+.review{ text-align: center;}
+.review-content{ display: none}
+.review-content.active{ display: block}
+.review-content blockquote{ font-size: 36px; }
+.review img{ border-radius: 50%; display: block; margin: auto; width: auto}
+.pager{ width: 60px; margin: auto }
+.pager ul li{ float: left; margin: 5px; }
+.pager ul li a{ display: block; width: 10px; height: 10px; border-radius: 50%; border: 2px solid #fff  }
+.pager ul li a.active{ background: #fff}
+.wrap-7{ background: #fff; color: #363636}
+.team{ position: relative; margin-top: 80px}
+.team img{ }
+.team .social{ position: absolute; top: 60px; right: 60px }
+.team .social li{ float: left; margin: 0 5px; }
+.team .social li a{ display: block; font-size: 24px; color: #fff; background: #ca3c3c; width: 50px; height: 50px; border-radius: 50%; text-align: center; line-height: 50px;}
+.team .social li a span{  }
+.team img{ margin-bottom: 40px}
+.gap{ padding-left: 100px}
+.gap h4{ color: #ca3c3c}
+.gap small{ color: #898989; font-size: 14px; }
+.gap p{ line-height: 22px; margin-top: 15px}
+.wrap-8{ background: #666; color: #fff; text-align: center; }
+.wrap-8 span.fa{ font-size: 72px;}
+p.large{ font-size: 72px}
+
+.bx-wrapper .bx-viewport{ background: transparent; border: none; -webkit-box-shadow: 0 0 0; box-shadow: 0 0 0}
+.bx-wrapper .bx-pager.bx-default-pager a{ background: #aaa}
+.bx-wrapper .bx-pager.bx-default-pager a:hover, .bx-wrapper .bx-pager.bx-default-pager a.active{ background: #fff}
+
+@media screen and (max-width:1220px){
+    .container{ width: 960px}
+    h2{ font-size: 60px}
+    .video p.thin{ font-size: 50px }
+    .wrap-5 .btn{ margin-right: 2px;}
+}
+
+@media screen and (max-width:980px){
+    .container{ width: 760px}
+    .col-t-1{ width: 8.33%; float: left; padding: 0 15px;}
+.col-t-2{ width: 16.66%; float: left; padding: 0 15px;}
+.col-t-3{ width: 25%; float: left; padding: 0 15px;}
+.col-t-4{ width: 33.33%; float: left; padding: 0 15px;}
+.col-t-5{ width: 41.66%; float: left; padding: 0 15px;}
+.col-t-6{ width: 50%; float: left; padding: 0 15px;}
+.col-t-7{ width: 58.33%; float: left; padding: 0 15px;}
+.col-t-8{ width: 66.66%; float: left; padding: 0 15px;}
+.col-t-9{ width: 75%; float: left; padding: 0 15px;}
+.col-t-10{ width: 83.33%; float: left; padding: 0 15px;}
+.col-t-11{ width: 91.66%; float: left; padding: 0 15px;}
+.col-t-12{ width: 100%; float: left; padding: 0 15px;}
+    .team .social{ top: 150px; right: 0 }
+    .gap{ padding-left: 50px}
+}
+
+@media screen and (max-width:767px){
+    .container{ width: 100%}
+    .collapse{ display: none}
+    .btn-mob{ display: block}
+     .col-m-1{ width: 8.33%; float: left; padding: 0 15px;}
+.col-m-2{ width: 16.66%; float: left; padding: 0 15px;}
+.col-m-3{ width: 25%; float: left; padding: 0 15px;}
+.col-m-4{ width: 33.33%; float: left; padding: 0 15px;}
+.col-m-5{ width: 41.66%; float: left; padding: 0 15px;}
+.col-m-6{ width: 50%; float: left; padding: 0 15px;}
+.col-m-7{ width: 58.33%; float: left; padding: 0 15px;}
+.col-m-8{ width: 66.66%; float: left; padding: 0 15px;}
+.col-m-9{ width: 75%; float: left; padding: 0 15px;}
+.col-m-10{ width: 83.33%; float: left; padding: 0 15px;}
+.col-m-11{ width: 91.66%; float: left; padding: 0 15px;}
+.col-m-12{ width: 100%; float: left; padding: 0 15px;}
+}
+@media screen and (max-width:460px){
+    .clear-p{ clear: both}
+    .col-p-6{ width: 50% }
+    .col-p-12{ width: 100% }
+}
